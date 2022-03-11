@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="6c7e554f-0024-4167-b504-1cda25fa08ac" Publisher="CN=Luka" Version="1.1.0.5" />
+  <Properties>
+    <DisplayName>AuthinkDEMO</DisplayName>
+    <PublisherDisplayName>Team AuThink</PublisherDisplayName>
+    <Logo>Assets\Logo\StoreLogo.png</Logo>
+    <Description>AuthinkDEMO</Description>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="AuthinkDEMO.App">
+      <m2:VisualElements DisplayName="AuthinkLite" Description="AuThink is a system designed with one main goal in mind: to help autistic children! But in order to do so, we were aware that parents and teachers who work with them also need help. That is why AuThink was designed bearing them in mind as well! We hope to increase the independence of autistic children in their environment, society in general, and day-to-day life through various specialized and individualized tasks, authored by their teachers and parents. This is why a high level of individualization and generalization is crucial in order to enable progress of children both in specialized centers and at home. And last but not least, AuThink aims to achieve these goals in an encouraging and educative environment!" BackgroundColor="#FFFFFF" ForegroundText="dark" Square150x150Logo="Assets\Logo\Logo.png" Square30x30Logo="Assets\Logo\SmallLogo.png">
+        <m2:DefaultTile ShortName="AuThink" Wide310x150Logo="Assets\Logo\lite-tile.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+          <m2:Rotation Preference="landscapeFlipped" />
+        </m2:InitialRotationPreference>
+        <m2:SplashScreen BackgroundColor="white" Image="Assets\Logo\SplashLite.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
